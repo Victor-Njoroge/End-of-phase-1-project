@@ -49,16 +49,18 @@ section{
 .top-header .login{
     position: absolute;
     top: 110%;
-    right: -110%;
+    right: 2rem;
     width: 50rem;
-    height: 45rem;
+    height: 30rem;
     background: #fff;
     border-radius: 1.5rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.377);
+    display: none;
   }
-  .top-header .login.active{
-    right: 2rem;
-    transform: .4s linear;
+  .top-header .login label{
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+   
   }
   .top-header .login input{
     height:5rem;
@@ -71,16 +73,16 @@ section{
     padding: 0 1.5rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.377);
     margin-top: 2rem;
-    margin-left: 7rem;
+    margin-left: 2rem;
 }
-.top-header .login .loginbtn{
-    font-size: 2.2rem;
+.top-header .login button{
+    font-size: 1.3rem;
     background: rgb(255, 47, 0);
     color: white;
     cursor: pointer;
    margin-top: 2rem;
    height: 4.5rem;
-   width: 10rem;
+   width: 15rem;
    margin-left: 18rem;
 }
 .top-header .search-form{

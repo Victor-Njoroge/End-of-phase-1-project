@@ -23,9 +23,13 @@ const Individual2 = (item) => {
             <br>
         </div>
         <p> Address ${item.address}</p>
-        <button>book</button>
+        <button class="book">book</button>
     `;
     document.querySelector(".box-container").append(container);
+    container.querySelector(".book").addEventListener("click", ()=>{
+        let reservation=document.querySelector(".login")
+        reservation.style.display="block"
+    })
 }
 
 async function coffee() {
@@ -33,7 +37,7 @@ async function coffee() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '57084af847msh476ffd1968fa067p1d8db4jsn992aed133b2f',
+            'X-RapidAPI-Key': '8ee8903cc5msh568ab48f3b33bd7p1a0be4jsn77deb29d4484',
             'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com'
         }
     };

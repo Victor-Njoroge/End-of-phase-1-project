@@ -1,12 +1,4 @@
-//let login=document.querySelector(".login");
 
-
-
-
-/*document.querySelector(".account").onclick=()=>{
-    login.classList.toggle("active")
-    searchForm.classList.remove('active')
-}*/
 
 let searchForm=document.querySelector(".search-form");
 document.querySelector(".search").onclick =()=>{
