@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background: #fff;
+}
+section{
+    padding: 2rem 9%;
+}
+.top-header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.3rem 9%;
+    background: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.562);
+}
+.top-header img{
+    width: 10rem;
+}
+.top-header span{
+    color: red;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: -20rem;
+}
+
+.top-header .login{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 45rem;
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.377);
+  }
+  .top-header .login.active{
+    right: 2rem;
+    transform: .4s linear;
+  }
+  .top-header .login input{
+    height:5rem;
+    width: 70%;
+    border-radius: 10rem;
+    background: none;
+    transform: none;
+    font-size: 1.6rem;
+    color: black;
+    padding: 0 1.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.377);
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+.top-header .login .loginbtn{
+    font-size: 2.2rem;
+    background: rgb(255, 47, 0);
+    color: white;
+    cursor: pointer;
+   margin-top: 2rem;
+   height: 4.5rem;
+   width: 10rem;
+   margin-left: 18rem;
+}
+.top-header .search-form{
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 50rem;
+  height: 40rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.377);
+}
+.top-header .search-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.top-header .search-form input{
+    height:5rem;
+    width: 70%;
+    border-radius: 10rem;
+    background: none;
+    transform: none;
+    font-size: 1.6rem;
+    color: black;
+    padding: 0 1.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.377);
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+.top-header .search-form .submit{
+    font-size: 2.2rem;
+    background: rgb(255, 47, 0);
+    color: white;
+    cursor: pointer;
+   margin-top: 2rem;
+   height: 6rem;
+   width: 25rem;
+   margin-left: 12rem;
+}
+.top-header .more-info{
+    display: flex;
+    
+}
+.top-header .more-info p{
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.top-header .more-info .fa-globe{
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+.top-header .more-info button{
+    width: 8rem;
+    font-size: 2.2rem;
+    background: #ffffff33;
+    border: 1px solid rgba(128, 128, 128, 0.202);
+    border-radius: 5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+.top-header .more-info button i{
+    margin: .5rem;
+}
+.search{
+    font-size: 2.2rem;
+    background: rgb(255, 47, 0);
+    color: white;
+    cursor: pointer;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+.icons{
+ margin-top: 9rem;
+ position: fixed;
+ padding: 1.3rem 9%;
+ display: flex;
+ align-items: center;
+ background: #fff;
+ border-bottom: 1px solid rgba(128, 128, 128, 0.63);
+}
+.icons .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -10rem;
+}
+.icons .icon-container img{
+    width: 5rem;
+    margin: 1.5rem;
+}
+.icons .icon-container p{
+    text-align: center;
+}
+
+.box-container{
+    margin-top: 23rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.284);
+    text-align: center;
+}
+.box-container .box img{
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+}
+.box-container .box .title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+ .box-container .box .details{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+ .box-container .box .details p{
+    color: rgba(0, 106, 255, 0.863);
+}
+.box-container .box button{
+    margin-top: 1.3rem;
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    background: rgb(255, 47, 0);
+    color: #fff;
+}
+
+.footer .box-container1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container1 .box{
+    flex: 1 1 25rem;
+    margin-left: 5rem;
+}
+
+.footer .box-container1 .box h3{
+    color: #333;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container1 .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container1 .box a:hover{
+    color: rgb(255, 47, 0);
+    text-decoration: underline;
+}
+
+.footer .box-container1 .box img{
+    margin-top: 1rem;
+    width: 9rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    color: rgb(255, 47, 0);
+}
