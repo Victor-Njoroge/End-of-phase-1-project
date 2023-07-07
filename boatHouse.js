@@ -24,10 +24,19 @@ const Individual6=(item)=>{
     <br>
     </div>
     <p> Address ${item.address}</p>
-    <button>book</button>
+    <button class="book">book</button>
    </div>
     `
     document.querySelector(".box-container").append(container);
+    document.querySelector(".box-container").append(container);
+    function slide(){
+        container.querySelector(".book").addEventListener("click", ()=>{
+      let reservation=document.querySelector(".login")
+      reservation.style.display="block"
+   
+  })
+  }
+slide()
 }
 
 
