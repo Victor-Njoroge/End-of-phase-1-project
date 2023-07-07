@@ -52,7 +52,7 @@ async function rapidData(){
     const options = {
         method: 'GET',
     	headers: {
-            'X-RapidAPI-Key': '57084af847msh476ffd1968fa067p1d8db4jsn992aed133b2f',
+            'X-RapidAPI-Key': '9ecbe81670msh499afdf84707a0ep18e99ajsn912bd10d6138',
             'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com'
         }
     };
