@@ -26,15 +26,20 @@ const Individual=(item)=>{
     <p> Address ${item.address}</p>
     <p> Price ${item.price.rate} ${item.price.currency}</p>
     <button class="book">book</button>
+
+    
    </div>
     `
     document.querySelector(".box-container").append(container);
 
-
-    container.querySelector(".book").addEventListener("click", ()=>{
+    function slide(){
+          container.querySelector(".book").addEventListener("click", ()=>{
         let reservation=document.querySelector(".login")
         reservation.style.display="block"
+      booking()
     })
+    }
+  slide()
 }
 
 
@@ -44,7 +49,7 @@ async function room(){
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '8ee8903cc5msh568ab48f3b33bd7p1a0be4jsn77deb29d4484',
+            'X-RapidAPI-Key': '9ecbe81670msh499afdf84707a0ep18e99ajsn912bd10d6138',
             'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com'
         }
     };
@@ -61,3 +66,37 @@ async function room(){
   
 }
 room()
+
+let current
+
+function booking(){
+    const reserve=document.querySelector(".reserveBtn")
+    reserve.addEventListener("click", ()=>{
+         Calculate()
+        
+    })
+   
+}
+
+
+
+
+function Calculate(){
+    let form=document.querySelector(".login")
+    form.innerHTML=" "
+    form.style.height="8rem"
+    form.style.width="10rem"
+    const overRide=()=>{
+       current="Booked"
+        const text=document.createElement("div")
+        text.className="status"
+        text.innerHTML=`
+        <p>Status </p>
+        <span>Booked</span>
+        
+        `
+        
+        document.querySelector(".login").appendChild(text)
+    }
+    overRide()
+}

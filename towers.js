@@ -1,5 +1,5 @@
-const idividual5=document.querySelector('.building')
-idividual5.addEventListener("click", ()=>{
+const idividual19=document.querySelector('.building')
+idividual19.addEventListener("click", ()=>{
     tower();
     clearPage();
 })
@@ -10,7 +10,7 @@ function clearPage() {
 
 
 
-const Individual5=(item)=>{
+const Individual19=(item)=>{
     let container=document.createElement("div")
     container.innerHTML=`
     <div class="box">
@@ -49,7 +49,7 @@ async function tower(){
         const response = await fetch(url, options);
         const result = await response.json();
         result.results.forEach((item) => {
-           Individual5(item);
+           Individual19(item);
          });
 
     } catch (error) {

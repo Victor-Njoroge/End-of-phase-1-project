@@ -1,5 +1,5 @@
-const idividual7=document.querySelector('.houseboat')
-idividual7.addEventListener("click", ()=>{
+const idividual6=document.querySelector('.houseboat')
+idividual6.addEventListener("click", ()=>{
     boatHouse();
     clearPage();
 })
@@ -10,7 +10,7 @@ function clearPage() {
 
 
 
-const Individual7=(item)=>{
+const Individual6=(item)=>{
     let container=document.createElement("div")
     container.innerHTML=`
     <div class="box">
@@ -45,7 +45,7 @@ async function boatHouse(){
         const response = await fetch(url, options);
         const result = await response.json();
         result.results.forEach((item) => {
-           Individual7(item);
+           Individual6(item);
          });
 
     } catch (error) {

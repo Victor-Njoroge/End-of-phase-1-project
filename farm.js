@@ -1,5 +1,5 @@
-const idividual6=document.querySelector('.farm')
-idividual6.addEventListener("click", ()=>{
+const idividual5=document.querySelector('.farm')
+idividual5.addEventListener("click", ()=>{
     farm();
     clearPage();
 })
@@ -10,7 +10,7 @@ function clearPage() {
 
 
 
-const Individual6=(item)=>{
+const Individual5=(item)=>{
     let container=document.createElement("div")
     container.innerHTML=`
     <div class="box">
@@ -45,7 +45,7 @@ async function farm(){
         const response = await fetch(url, options);
         const result = await response.json();
         result.results.forEach((item) => {
-           Individual6(item);
+           Individual5(item);
          });
 
     } catch (error) {
