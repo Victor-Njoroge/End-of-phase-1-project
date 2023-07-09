@@ -23,6 +23,7 @@ const Individual2 = (item) => {
         <p class="Status">Status <span>${item.Status}</span></p>
         </div>
         <button class="book">book</button>
+        <button class="delete"><i class="fas fa-trash"></i></button>
     `;
     document.querySelector(".box-container").append(container);
     function slide(){
@@ -57,6 +58,23 @@ const Individual2 = (item) => {
   })
   }
 slide()
+const Delete=()=>{
+  container.querySelector(".delete").addEventListener("click", ()=>{
+    container.remove()
+    fetch(`http://localhost:3000/Coffee/${item.id}`,{
+          method:"DELETE",
+          headers:{
+            "Content-Type":"application/json"
+          }
+        })
+        .then(res =>res.json())
+        .then(Rooms=>console.log(Rooms))
+  })
+}
+Delete()
+
+
+
 }
 
  function coffee() {
