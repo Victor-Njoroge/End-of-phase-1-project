@@ -1107,90 +1107,99 @@
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Not reserved"
     },
     {
       "id": 2,
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Reserved"
     },
     {
       "id": 3,
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2018/03/06/04/16/swimming-pool-3202525_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Not reserved"
     },
     {
       "id": 4,
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2018/08/18/22/45/swimming-pool-3615621_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Not reserved"
     },
     {
       "id": 5,
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2012/02/17/14/52/apartments-14082_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Not reserved"
     },
     {
       "id": 6,
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2017/08/07/13/21/tree-2603792_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Not reserved"
     },
     {
       "id": 7,
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2019/08/08/06/33/pool-4392060_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Not reserved"
     },
     {
       "id": 8,
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2017/06/27/09/44/sunbeds-2446876_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Not reserved"
     },
     {
       "id": 9,
       "name": "",
       "image": "https://cdn.pixabay.com/photo/2017/06/02/13/04/villa-2366293_1280.jpg",
       "description": "",
-      "Adress": "",
-      "Bedroom": "",
-      "Bathrooms": "",
-      "Status": ""
+      "Adress": "Anavissos Greece",
+      "Bedroom": "2bedroom",
+      "Beds": "2 Beds",
+      "Bathrooms": "1 Bathroom",
+      "Status": "Not reserved"
     }
   ]
 }
