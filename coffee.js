@@ -61,7 +61,7 @@ slide()
 const Delete=()=>{
   container.querySelector(".delete").addEventListener("click", ()=>{
     container.remove()
-    fetch(`http://localhost:3000/Coffee/${item.id}`,{
+    fetch(`https://json-server-u6is.onrender.com/Coffee/${item.id}`,{
           method:"DELETE",
           headers:{
             "Content-Type":"application/json"

@@ -42,7 +42,7 @@ const Individual3=(item)=>{
         e.preventDefault()
       item.Status="Reserved"
       container.querySelector(".Status").textContent=item.Status
-        fetch(`http://localhost:3000/swimming/${item.id}`,{
+        fetch(`https://json-server-u6is.onrender.com/${item.id}`,{
           method:"PATCH",
           headers:{
             "Content-Type":"application/json"
@@ -63,7 +63,7 @@ slide()
 const Delete=()=>{
   container.querySelector(".delete").addEventListener("click", ()=>{
     container.remove()
-    fetch(`http://localhost:3000/swimming/${item.id}`,{
+    fetch(`https://json-server-u6is.onrender.com/${item.id}`,{
           method:"DELETE",
           headers:{
             "Content-Type":"application/json"
@@ -81,7 +81,7 @@ Delete()
 
 
 function pool(){
-    fetch("http://localhost:3000/swimming")
+    fetch("https://json-server-u6is.onrender.com/swimming")
     .then((res)=>{
         res.json()
         .then(swimming=>swimming.forEach(item=>Individual3(item)))

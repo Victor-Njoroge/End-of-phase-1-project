@@ -42,7 +42,7 @@ const Individual7=(item)=>{
         e.preventDefault()
       item.Status="Reserved"
       container.querySelector(".Status").textContent=item.Status
-        fetch(`http://localhost:3000/Vineyard/${item.id}`,{
+        fetch(`https://json-server-u6is.onrender.com/Vineyard/${item.id}`,{
           method:"PATCH",
           headers:{
             "Content-Type":"application/json"
@@ -63,7 +63,7 @@ slide();
 const Delete=()=>{
   container.querySelector(".delete").addEventListener("click", ()=>{
     container.remove()
-    fetch(`http://localhost:3000/Vineyard/${item.id}`,{
+    fetch(`https://json-server-u6is.onrender.com/Vineyard/${item.id}`,{
           method:"DELETE",
           headers:{
             "Content-Type":"application/json"
@@ -87,7 +87,7 @@ Delete()
 
 
  function vineYard(){
-    fetch("http://localhost:3000/Vineyard")
+    fetch("https://json-server-u6is.onrender.com/Vineyard")
     .then((res)=>{
         res.json()
         .then(Vineyard=>Vineyard.forEach(item=>Individual7(item)))

@@ -42,7 +42,7 @@ const Individual19=(item)=>{
         e.preventDefault()
       item.Status="Reserved"
       container.querySelector(".Status").textContent=item.Status
-        fetch(`http://localhost:3000/Towers/${item.id}`,{
+        fetch(`https://json-server-u6is.onrender.com/Towers/${item.id}`,{
           method:"PATCH",
           headers:{
             "Content-Type":"application/json"
@@ -64,7 +64,7 @@ slide()
 const Delete=()=>{
   container.querySelector(".delete").addEventListener("click", ()=>{
     container.remove()
-    fetch(`http://localhost:3000/Towers/${item.id}`,{
+    fetch(`https://json-server-u6is.onrender.com/Towers/${item.id}`,{
           method:"DELETE",
           headers:{
             "Content-Type":"application/json"
@@ -84,7 +84,7 @@ Delete()
 
 
  function tower(){
-  fetch("http://localhost:3000/Towers")
+  fetch("https://json-server-u6is.onrender.com/Towers")
   .then((res)=>{
     res.json()
     .then(Towers=>Towers.forEach(item=>Individual19(item)))

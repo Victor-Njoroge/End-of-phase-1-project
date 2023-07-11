@@ -42,7 +42,7 @@ const Individual10=(item)=>{
         e.preventDefault()
       item.Status="Reserved"
       container.querySelector(".Status").textContent=item.Status
-        fetch(`http://localhost:3000/Container/${item.id}`,{
+        fetch(`https://json-server-u6is.onrender.com/Container/${item.id}`,{
           method:"PATCH",
           headers:{
             "Content-Type":"application/json"
@@ -63,7 +63,7 @@ slide();
 const Delete=()=>{
   container.querySelector(".delete").addEventListener("click", ()=>{
     container.remove()
-    fetch(`http://localhost:3000/Container/${item.id}`,{
+    fetch(`https://json-server-u6is.onrender.com/Container/${item.id}`,{
           method:"DELETE",
           headers:{
             "Content-Type":"application/json"
@@ -86,7 +86,7 @@ Delete()
 
 
 async function container(){
-   fetch("http://localhost:3000/Container")
+   fetch("https://json-server-u6is.onrender.com/Container")
     .then((res)=>{
         res.json()
         .then(Container=>Container.forEach(item=>Individual10(item)))
