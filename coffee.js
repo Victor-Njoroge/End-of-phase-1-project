@@ -40,7 +40,7 @@ const Individual2 = (item) => {
         e.preventDefault()
       item.Status="Reserved"
       container.querySelector(".Status").textContent=item.Status
-        fetch(`http://localhost:3000/Coffee/${item.id}`,{
+        fetch(`https://json-server-u6is.onrender.com/${item.id}`,{
           method:"PATCH",
           headers:{
             "Content-Type":"application/json"
@@ -78,7 +78,7 @@ Delete()
 }
 
  function coffee() {
-    fetch("http://localhost:3000/Coffee")
+    fetch("https://json-server-u6is.onrender.com/Coffee")
     .then((res)=>{
         res.json()
         .then(Coffee =>Coffee.forEach(item=>Individual2(item)))

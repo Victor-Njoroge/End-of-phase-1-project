@@ -43,7 +43,7 @@ const Individual=(item)=>{
           e.preventDefault()
         item.Status="Reserved"
         container.querySelector(".Status").textContent=item.Status
-          fetch(`http://localhost:3000/Rooms/${item.id}`,{
+          fetch(`https://json-server-u6is.onrender.com/Rooms/${item.id}`,{
             method:"PATCH",
             headers:{
               "Content-Type":"application/json"
@@ -66,7 +66,7 @@ const Individual=(item)=>{
   const Delete=()=>{
     container.querySelector(".delete").addEventListener("click", ()=>{
       container.remove()
-      fetch(`http://localhost:3000/Rooms/${item.id}`,{
+      fetch(`https://json-server-u6is.onrender.com/Rooms/${item.id}`,{
             method:"DELETE",
             headers:{
               "Content-Type":"application/json"
@@ -83,7 +83,7 @@ const Individual=(item)=>{
 
 
  function room(){
- fetch("http://localhost:3000/Rooms")
+ fetch("https://json-server-u6is.onrender.com/Rooms")
  .then((res)=>{
     res.json()
     .then(Rooms =>Rooms.forEach(item=>Individual(item)))
